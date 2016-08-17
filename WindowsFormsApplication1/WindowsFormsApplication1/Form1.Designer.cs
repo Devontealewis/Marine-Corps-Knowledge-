@@ -45,10 +45,18 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
+            this.M2pictureBox = new System.Windows.Forms.PictureBox();
+            this.M240pictureBox = new System.Windows.Forms.PictureBox();
+            this.SawpictureBox = new System.Windows.Forms.PictureBox();
+            this.M16pictureBox = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MK19pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M2pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M240pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SawpictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M16pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -63,6 +71,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.M16pictureBox);
+            this.tabPage1.Controls.Add(this.SawpictureBox);
+            this.tabPage1.Controls.Add(this.M240pictureBox);
+            this.tabPage1.Controls.Add(this.M2pictureBox);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.btnSelect);
             this.tabPage1.Controls.Add(this.MK19pictureBox);
@@ -82,6 +94,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Weapon Systems";
             this.tabPage1.UseVisualStyleBackColor = true;
+    
             // 
             // btnSelect
             // 
@@ -101,6 +114,7 @@
             this.MK19pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MK19pictureBox.TabIndex = 10;
             this.MK19pictureBox.TabStop = false;
+            this.MK19pictureBox.Visible = false;
             // 
             // label4
             // 
@@ -202,6 +216,47 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Name";
             // 
+            // M2pictureBox
+            // 
+            this.M2pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("M2pictureBox.Image")));
+            this.M2pictureBox.Location = new System.Drawing.Point(249, 29);
+            this.M2pictureBox.Name = "M2pictureBox";
+            this.M2pictureBox.Size = new System.Drawing.Size(397, 194);
+            this.M2pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.M2pictureBox.TabIndex = 13;
+            this.M2pictureBox.TabStop = false;
+            // 
+            // M240pictureBox
+            // 
+            this.M240pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("M240pictureBox.Image")));
+            this.M240pictureBox.Location = new System.Drawing.Point(249, 29);
+            this.M240pictureBox.Name = "M240pictureBox";
+            this.M240pictureBox.Size = new System.Drawing.Size(397, 194);
+            this.M240pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.M240pictureBox.TabIndex = 14;
+            this.M240pictureBox.TabStop = false;
+            // 
+            // SawpictureBox
+            // 
+            this.SawpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SawpictureBox.Image")));
+            this.SawpictureBox.Location = new System.Drawing.Point(249, 29);
+            this.SawpictureBox.Name = "SawpictureBox";
+            this.SawpictureBox.Size = new System.Drawing.Size(397, 194);
+            this.SawpictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SawpictureBox.TabIndex = 15;
+            this.SawpictureBox.TabStop = false;
+            // 
+            // M16pictureBox
+            // 
+            this.M16pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("M16pictureBox.Image")));
+            this.M16pictureBox.Location = new System.Drawing.Point(249, 29);
+            this.M16pictureBox.Name = "M16pictureBox";
+            this.M16pictureBox.Size = new System.Drawing.Size(397, 194);
+            this.M16pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.M16pictureBox.TabIndex = 16;
+            this.M16pictureBox.TabStop = false;
+            this.M16pictureBox.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +271,10 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MK19pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M2pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M240pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SawpictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.M16pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,6 +297,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSelect;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox M2pictureBox;
+        private System.Windows.Forms.PictureBox M16pictureBox;
+        private System.Windows.Forms.PictureBox SawpictureBox;
+        private System.Windows.Forms.PictureBox M240pictureBox;
     }
 }
 
