@@ -87,6 +87,36 @@ namespace WindowsFormsApplication1
                     txtboxfirerate.Text = "750-950 rounds per minute";
                     txtboxweight.Text = "27.6 lbs";
                 }
+                if(WpnName == "Saw"){
+                MK19pictureBox.Visible = false;
+                M2pictureBox.Visible = false;
+                M240pictureBox.Visible = false;
+                SawpictureBox.Visible = true;
+                M16pictureBox.Visible = false;
+                M4pictureBox.Visible = false;
+                label5.Visible = false;
+
+                txtboxmaxrange.Text = "3,600m";
+                txtboxeffrange.Text = "700m without barrel, 800m w/th barrel";
+                txtboxfirerate.Text = "450-575 rounds per minute";
+                txtboxweight.Text = "17 lbs unloaded, 22 lbs loaded";
+                }
+            }
+
+            if (WpnName == "M16")
+            {
+                MK19pictureBox.Visible = false;
+                M2pictureBox.Visible = false;
+                M240pictureBox.Visible = false;
+                SawpictureBox.Visible = false;
+                M16pictureBox.Visible = true;
+                M4pictureBox.Visible = false;
+                label5.Visible = false;
+
+                txtboxmaxrange.Text = "3,600m";
+                txtboxeffrange.Text = "800m area, 550m point";
+                txtboxfirerate.Text = "12-15 susbtained rounds/min, 45 -60 rounds/min semi";
+                txtboxweight.Text = "84 lbs";
             }
         }
 
