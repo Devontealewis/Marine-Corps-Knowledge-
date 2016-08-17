@@ -214,6 +214,7 @@
             this.Column1});
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(144, 326);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -227,6 +228,7 @@
             // 
             this.txtboxweight.Location = new System.Drawing.Point(336, 342);
             this.txtboxweight.Name = "txtboxweight";
+            this.txtboxweight.ReadOnly = true;
             this.txtboxweight.Size = new System.Drawing.Size(310, 20);
             this.txtboxweight.TabIndex = 4;
             // 
@@ -234,6 +236,7 @@
             // 
             this.txtboxfirerate.Location = new System.Drawing.Point(336, 306);
             this.txtboxfirerate.Name = "txtboxfirerate";
+            this.txtboxfirerate.ReadOnly = true;
             this.txtboxfirerate.Size = new System.Drawing.Size(310, 20);
             this.txtboxfirerate.TabIndex = 3;
             // 
@@ -241,6 +244,7 @@
             // 
             this.txtboxeffrange.Location = new System.Drawing.Point(336, 267);
             this.txtboxeffrange.Name = "txtboxeffrange";
+            this.txtboxeffrange.ReadOnly = true;
             this.txtboxeffrange.Size = new System.Drawing.Size(310, 20);
             this.txtboxeffrange.TabIndex = 2;
             // 
@@ -248,6 +252,7 @@
             // 
             this.txtboxmaxrange.Location = new System.Drawing.Point(336, 229);
             this.txtboxmaxrange.Name = "txtboxmaxrange";
+            this.txtboxmaxrange.ReadOnly = true;
             this.txtboxmaxrange.Size = new System.Drawing.Size(310, 20);
             this.txtboxmaxrange.TabIndex = 1;
             // 

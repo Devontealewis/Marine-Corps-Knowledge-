@@ -12,14 +12,17 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        String WpnName;
+        String WpnName = "Mk19";
+        
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             this.dataGridView1.Rows.Add("Mk19");
             this.dataGridView1.Rows.Add("M2 50 cal"); 
             this.dataGridView1.Rows.Add("M240");
@@ -36,10 +39,20 @@ namespace WindowsFormsApplication1
 
             
         }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int rowIndex = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[rowIndex];
+
+            WpnName = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
+        }
+
+    
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            {
+            
                 if (WpnName == "Mk19")
                 {
                     MK19pictureBox.Visible = true;
@@ -48,7 +61,8 @@ namespace WindowsFormsApplication1
                     SawpictureBox.Visible = false;
                     M16pictureBox.Visible = false;
                     M4pictureBox.Visible = false;
-                    label5.Visible = false;
+                    label5.Visible = true;
+                    label5.Text = WpnName;
 
                     txtboxmaxrange.Text = "2,212m";
                     txtboxeffrange.Text = "1,500m";
@@ -63,7 +77,8 @@ namespace WindowsFormsApplication1
                     SawpictureBox.Visible = false;
                     M16pictureBox.Visible = false;
                     M4pictureBox.Visible = false;
-                    label5.Visible = false;
+                    label5.Visible = true;
+                    label5.Text = WpnName;
 
                     txtboxmaxrange.Text = "2,000m";
                     txtboxeffrange.Text = "1,830m area, 1,500m point";
@@ -80,7 +95,8 @@ namespace WindowsFormsApplication1
                     SawpictureBox.Visible = false;
                     M16pictureBox.Visible = false;
                     M4pictureBox.Visible = false;
-                    label5.Visible = false;
+                    label5.Visible = true;
+                    label5.Text = WpnName;
 
                     txtboxmaxrange.Text = "3,725m";
                     txtboxeffrange.Text = "800m bipod, 1,100m tripod";
@@ -94,13 +110,14 @@ namespace WindowsFormsApplication1
                 SawpictureBox.Visible = true;
                 M16pictureBox.Visible = false;
                 M4pictureBox.Visible = false;
-                label5.Visible = false;
+                label5.Visible = true;
+                label5.Text = WpnName;
 
                 txtboxmaxrange.Text = "3,600m";
                 txtboxeffrange.Text = "700m without barrel, 800m w/th barrel";
                 txtboxfirerate.Text = "450-575 rounds per minute";
                 txtboxweight.Text = "17 lbs unloaded, 22 lbs loaded";
-                }
+                
             }
 
             if (WpnName == "M16")
@@ -111,7 +128,8 @@ namespace WindowsFormsApplication1
                 SawpictureBox.Visible = false;
                 M16pictureBox.Visible = true;
                 M4pictureBox.Visible = false;
-                label5.Visible = false;
+                label5.Visible = true;
+                label5.Text = WpnName;
 
                 txtboxmaxrange.Text = "3,600m";
                 txtboxeffrange.Text = "800m area, 550m point";
@@ -128,7 +146,8 @@ namespace WindowsFormsApplication1
                 SawpictureBox.Visible = false;
                 M16pictureBox.Visible = false;
                 M4pictureBox.Visible = true;
-                label5.Visible = false;
+                label5.Visible = true;
+                label5.Text = WpnName;
 
                 txtboxmaxrange.Text = "3,600m";
                 txtboxeffrange.Text = "500m point";
@@ -137,15 +156,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int rowIndex = e.RowIndex;
-            DataGridViewRow row = dataGridView1.Rows[rowIndex];
 
-            WpnName = dataGridView1.Rows[rowIndex].Cells[0].Value.ToString();
-        }
-
-    
 
     }
 }
