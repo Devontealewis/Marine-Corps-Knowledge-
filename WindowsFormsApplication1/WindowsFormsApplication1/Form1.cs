@@ -24,6 +24,14 @@ namespace WindowsFormsApplication1
             this.dataGridView1.Rows.Add("M240");
             this.dataGridView1.Rows.Add("Saw");
             this.dataGridView1.Rows.Add("M16");
+            MK19pictureBox.Visible = false;
+            M2pictureBox.Visible = false;
+            M240pictureBox.Visible = false;
+            SawpictureBox.Visible = false;
+            M16pictureBox.Visible = false; 
+
+
+            
         }
 
     
