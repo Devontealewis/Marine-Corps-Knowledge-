@@ -116,7 +116,24 @@ namespace WindowsFormsApplication1
                 txtboxmaxrange.Text = "3,600m";
                 txtboxeffrange.Text = "800m area, 550m point";
                 txtboxfirerate.Text = "12-15 susbtained rounds/min, 45 -60 rounds/min semi";
-                txtboxweight.Text = "84 lbs";
+                txtboxweight.Text = "7 lbs, 8 ounces";
+            }
+
+
+            if (WpnName == "M4")
+            {
+                MK19pictureBox.Visible = false;
+                M2pictureBox.Visible = false;
+                M240pictureBox.Visible = false;
+                SawpictureBox.Visible = false;
+                M16pictureBox.Visible = false;
+                M4pictureBox.Visible = true;
+                label5.Visible = false;
+
+                txtboxmaxrange.Text = "3,600m";
+                txtboxeffrange.Text = "500m point";
+                txtboxfirerate.Text = "???";
+                txtboxweight.Text = "7.5 lbs";
             }
         }
 
